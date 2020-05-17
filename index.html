@@ -49,17 +49,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#mywork">Work</a>
+          <a class="nav-link js-scroll-trigger" href="#mywork">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
         </li> -->
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
-        </li>
         <!-- <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
         </li> -->
@@ -72,32 +75,21 @@
 
   <div class="container-fluid p-0">
 
-    <section class="profile-section p-3 p-lg-5 d-flex" id="about">
-      <!-- align-items-center -->
+    <section class="profile-section p-3 p-lg-5 d-flex" id="home">
       <div class="w-100">
-        <h1 class="mb-0">Nikhil
-          <span class="text-primary">Kabbin</span>
-        </h1>
-        <link rel="canonical" href="https://nikhilkabbin.com/">
-        <div class="subheading mb-1">Princeton, New Jersey · (732) 666-7882 ·
-          <a href="mailto:nikhil.kabbin@gmail.com">nikhil.kabbin@gmail.com</a>
+        <h3>Hi. I'm Nikhil Kabbin</h3>
+        <div class="my-5">
+          <h5 class="mb-3">About me</h5>
+          <h4>Wayferer, Tinkerer, Data & Technology Lover...</h4>
+          <p class="lead mb-5 max-width-75">I am a Data Scientist and Technology Lead at <a href="https://gramener.com">Gramener Inc.</a>
+              I advice and architect data-driven solutions for the organizations. I enjoy finding insights and storytelling with data through beautiful visualizations.
+          </p>
         </div>
-        <div class="social-icons mb-5">
-          <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/nikhilkabbin/" target="_blank"></a>
-          <a class="fab fa-github" href="https://github.com/nikhilkabbin" target="_blank"></a>
-          <a class="fab fa-twitter" href="https:/twitter.com/nikhilkabbin" target="_blank"></a>
-          <a class="fab fa-facebook-f" href="https://www.facebook.com/nikhilkabbin" target="_blank"></a>
-        </div>
-        <h3 class="mb-3">About me</h3>
-        <h4>Wayferer, Tinkerer, Data & Technology Lover...</h4>
-        <p class="lead mb-5 max-width-75">I am Data Scientist and Technology Lead at <a href="https://gramener.com">Gramener Inc.</a>
-           I advice and architect data-driven solutions for the organizations. I enjoy finding insights and storytelling with data through beautiful visualizations.
-        </p>
         <div class="more-about-me row">
-          <div class="col-md-4">
-            <h4 class="text-center text-primary">Expertise</h4>
+          <div class="col-md-4 mt-4">
+            <h4 class="text-primary">Expertise</h4>
             <p class="lead">
-              I enjoy solving problems with technology.
+              I enjoy solving problems with technology and expert in building end-to-end data sceince applications.
               <ul>
                 <li>Data driven applications</li>
                 <li>Web Technologies</li>
@@ -105,21 +97,22 @@
                 <li>Data Visualizations</li>
                 <li>Python for Data Science</li>
                 <li>Power-BI</li>
+                <li>Microsoft Power Platform</li>
               </ul>
             </p>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center text-primary">I like to speak</h4>
+          <div class="col-md-4 mt-4 px-4">
+            <h4 class="text-primary">I like to speak</h4>
             <p class="lead">I like to speak at events, forums or conferences about data and technology.</p>
             <p class="lead">
               I have delivered talks and workshops at various forums, conferences and Graduate schools on Building real time data science applications, Data Visualizations, Python for Data Science, Pandas,
                Data Science Tech stack, Optimizing Databases, Building Data pipeline, Artificial Intelligence and Storytelling with data.
             </p>
           </div>
-          <div class="col-md-4">
-            <h4 class="text-center text-primary">Life With Data</h4>
+          <div class="col-md-4 mt-4 px-4">
+            <h4 class="text-primary">Life With Data</h4>
             <p class="lead">
-              We started <a href="https://lifewithdata.in">LifeWithData</a> as a data visualization museum in Bangalore to explore how to use data to empower our lives better.
+              We started <a href="https://twitter.com/lwdata">LifeWithData</a> as a data visualization museum in Bangalore to explore how to use data to empower our lives better.
             </p>
             <p class="lead">
               Later, We started helping non-profits in solving data science problems.
@@ -127,20 +120,20 @@
           </div>
         </div>
       </div>
-    </section>
 
+    </section>
     <hr class="m-0">
 
     <section class="profile-section p-3 p-lg-5 justify-content-center" id="mywork">
       <div class="w-100">
-        <h2 class="mb-5">Projects <em class="h6">to list a few...</em></h2>
+        <h3 class="mb-5">Projects <em class="h6">to list a few...</em></h3>
         <div class="project-cards row worklist"></div>
         <script type="text/html" id="worklist">
           <% _.each(wlist, function(row){ %>
             <div class="col-md-3 mb-4">
-              <div class="card px-2 py-1">
-                <div class="card-block" style="background: url(img/<%= row.image%>); background-position: 100% 0; background-size: auto 40px; background-repeat: no-repeat;">
-                  <h4 class="card-title"><%= row.name%></h4>
+              <div class="card px-2 py-1 shadow-sm">
+                <div class="card-block" style="background: url(img/<%= row.image%>); background-position: 100% 100%; background-size: auto 40px; background-repeat: no-repeat;">
+                  <h5 class="card-title"><%= row.name%></h5>
                   <!-- <h6 class="card-subtitle text-muted">Support card subtitle</h6> -->
                   <p class="card-text p-y-1"><%= row.description %></p>
                   <a href="<%= row.link%>" class="card-link"><%= row.linktext%></a>
@@ -151,27 +144,15 @@
         </script>
       </div>
     </section>
-
     <hr class="m-0">
 
-    <!-- <section class="profile-section p-3 p-lg-5 d-flex align-items-center" id="blog">
+    <section class="profile-section p-3 p-lg-5 d-flex" id="about">
+      <!-- align-items-center -->
       <div class="w-100">
-        <h2 class="mb-5">Blog</h2>
-        ...
-      </div>
-    </section>
-
-    <hr class="m-0"> -->
-
-    <section class="profile-section p-3 p-lg-5 d-flex" id="resume">
-      <div class="w-100">
-        <h2 class="mb-5">Resume</h2>
-
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <div class="block-title">
-              <h3>Education</h3>
-            </div>
+        <h3 class="mb-5">Profile</h3>
+        <div class="more-about-me row">
+          <div class="col-md-4">
+            <h4 class="text-primary">Education</h4>
             <div class="timeline">
               <div class="timeline-event te-primary">
                 <h4 class="event-name">Master of Science</h4>
@@ -188,27 +169,24 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="block-title">
-              <h3>Experience</h3>
-            </div>
+          <div class="col-md-4">
+            <h4 class="text-primary">Experience</h4>
             <div class="timeline">
-
-              <div class="timeline-event te-primary">
+              <div class="timeline-event te-primary mb-4">
                 <h4 class="event-name">Lead Data Scientist</h4>
                 <span class="event-description">Gramener</span>
                 <div class="event-date">Jan 2019 - Current</div>
-                <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                <!-- <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
               </div>
 
-              <div class="timeline-event te-primary">
+              <div class="timeline-event te-primary mb-4">
                 <h4 class="event-name">Senior Data Scientist</h4>
                 <span class="event-description">Gramener</span>
                 <div class="event-date">May 2018 - Dec 2018</div>
                 <!-- <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
               </div>
 
-              <div class="timeline-event te-primary">
+              <div class="timeline-event te-primary mb-4">
                 <h4 class="event-name">Data Scientist</h4>
                 <span class="event-description">Gramener</span>
                 <div class="event-date">May 2013 - Apr 2018</div>
@@ -216,41 +194,72 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="block-title">
-              <h3>Software Engineering</h3>
-            </div>
-            <div class="skills-info mb-4">
-              <span>
-                Python, JavaScript, TypeScript, HTML, CSS, Web Frameworks, Vue.js,
-                MSSQL, MySQL, Redis, Neo4j, MangoDB, Elasticsearch, SQLite,
-                PostGRES, PostGIS, TileMill, IIS, Nginx, Docker, Git, Dev-Ops, Data-Ops, AWS, Azure
-              </span>
-            </div>
-            <div class="block-title">
-              <h3>Data Science</h3>
-            </div>
-            <div class="skills-info mb-4">
-              <span>
-                Pandas, R, Spacy, D3.js, Exploratory Data Analysis, Data Visualization, Machine Learning, NLP,
-                Text-Mining, Geospatial Analysis,
-              </span>
-            </div>
-            <div class="block-title">
-              <h3>Consulting & Tools</h3>
-            </div>
-            <div class="skills-info mb-4">
-              <span>
-                Data Consulting, Storytelling with Data, Communication, PowerPoint, Excel, Power-BI,
-                Power Apps
-              </span>
+          <div class="col-md-4">
+            <h4 class="text-primary">Skills</h4>
+            <div class="timeline">
+              <div class="block-title">
+                <h4>Software Engineering</h4>
+              </div>
+              <div class="skills-info mb-4">
+                <span>
+                  Python, JavaScript, TypeScript, HTML, CSS, Web Frameworks, Vue.js,
+                  MSSQL, MySQL, Redis, Neo4j, MangoDB, Elasticsearch, SQLite,
+                  PostGRES, PostGIS, TileMill, IIS, Nginx, Docker, Git, Dev-Ops, Data-Ops, AWS, Azure
+                </span>
+              </div>
+              <div class="block-title">
+                <h4>Data Science</h4>
+              </div>
+              <div class="skills-info mb-4">
+                <span>
+                  Pandas, R, Spacy, D3.js, Exploratory Data Analysis, Data Visualization, Machine Learning, NLP,
+                  Text-Mining, Geospatial Analysis,
+                </span>
+              </div>
+              <div class="block-title">
+                <h4>Consulting & Tools</h4>
+              </div>
+              <div class="skills-info mb-4">
+                <span>
+                  Data Consulting, Storytelling with Data, Communication, PowerPoint, Excel, Power-BI,
+                  Power Apps
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <hr class="m-0">
+
+    <section class="profile-section p-3 p-lg-5 d-flex" id="contact">
+      <div class="w-100">
+        <h3 class="mb-5">Contact</h3>
+        <h6>Feel free to get in touch with me. I am always open to discussing new projects, idea or technology.</h6>
+        <div class="mt-4">Location</div>
+        <a href="https://goo.gl/maps/jkG77PV7oM2Tza336">Princeton, New Jersey</a>
+        <div class="mt-4">Need help?</div>
+        <a href="mailto:nikhil.kabbin@gmail.com">nikhil.kabbin@gmail.com</a>
+        <div class="mt-4">Feel like talking?</div>
+        <a href="tel:+17326667882">+1 732 666 7882</a>
+        <link rel="canonical" href="https://nikhilkabbin.com/">
+        <div class="social-icons mt-2 ml-1">
+          <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/nikhilkabbin/" target="_blank"></a>
+          <a class="fab fa-github" href="https://github.com/nikhilkabbin" target="_blank"></a>
+          <a class="fab fa-twitter" href="https:/twitter.com/nikhilkabbin" target="_blank"></a>
+          <a class="fab fa-facebook-f" href="https://www.facebook.com/nikhilkabbin" target="_blank"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="profile-section p-3 p-lg-5 d-flex align-items-center" id="blog">
+      <div class="w-100">
+        <h2 class="mb-5">Blog</h2>
+        ...
+      </div>
+    </section>
+
+    <hr class="m-0"> -->
 
     <!-- <section class="profile-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
