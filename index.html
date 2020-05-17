@@ -11,15 +11,15 @@
   <title>Nikhil Kabbin</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
 
   <!-- Custom styles for this template -->
-  <link href="css/resume.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -32,7 +32,8 @@
         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,259 +42,239 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          <a class="nav-link js-scroll-trigger" href="#mywork">Work</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#notebook">Notebook</a>
+        </li> -->
       </ul>
     </div>
   </nav>
 
   <div class="container-fluid p-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex" id="about">  <!-- align-items-center -->
+    <section class="resume-section p-3 p-lg-5 d-flex" id="about">
+      <!-- align-items-center -->
       <div class="w-100">
         <h1 class="mb-0">Nikhil
           <span class="text-primary">Kabbin</span>
         </h1>
-        <div class="subheading mb-5">Princeton, New Jersey · (732) 666-7882 ·
+        <div class="subheading mb-1">Princeton, New Jersey · (732) 666-7882 ·
           <a href="mailto:nikhil.kabbin@gmail.com">nikhil.kabbin@gmail.com</a>
         </div>
-        <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-        <div class="social-icons">
-          <a href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
+        <div class="social-icons mb-5">
+          <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/nikhilkabbin/" target="_blank"></a>
+          <a class="fab fa-github" href="https://github.com/nikhilkabbin" target="_blank"></a>
+          <a class="fab fa-twitter" href="https:/twitter.com/nikhilkabbin" target="_blank"></a>
+          <a class="fab fa-facebook-f" href="https://www.facebook.com/nikhilkabbin" target="_blank"></a>
+        </div>
+        <h3 class="mb-3">About me</h3>
+        <h4>Wayferer, Tinkerer, Data & Technology Lover...</h4>
+        <p class="lead mb-5 max-width-75">I am Data Scientist and Technology Lead at <a href="https://gramener.com">Gramener Inc.</a>
+           I advice and architect data-driven solutions for the organizations. I enjoy finding insights and storytelling with data through beautiful visualizations.
+        </p>
+        <div class="more-about-me row">
+          <div class="col-md-4">
+            <h4 class="text-center text-primary">Expertise</h4>
+            <p class="lead">
+              I enjoy solving problems with technology.
+              <ul>
+                <li>Data driven applications</li>
+                <li>Web Technologies</li>
+                <li>Machine Learning</li>
+                <li>Data Visualizations</li>
+                <li>Python for Data Science</li>
+                <li>Power-BI</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center text-primary">I like to speak</h4>
+            <p class="lead">I like to speak at events, forums or conferences about data and technology.</p>
+            <p class="lead">
+              I have delivered talks and workshops at various forums, conferences and Graduate schools on Building real time data science applications, Data Visualizations, Python for Data Science, Pandas,
+               Data Science Tech stack, Optimizing Databases, Building Data pipeline, Artificial Intelligence and Storytelling with data.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center text-primary">Life With Data</h4>
+            <p class="lead">
+              We started <a href="https://lifewithdata.in">LifeWithData</a> as a data visualization museum in Bangalore to explore how to use data to empower our lives better.
+            </p>
+            <p class="lead">
+              Later, We started helping non-profits in solving data science problems.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <section class="resume-section p-3 p-lg-5 justify-content-center" id="mywork">
       <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Senior Data Scientist</h3>
-            <div class="subheading mb-3">Gramener Inc.</div>
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2018 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Curator</h3>
-            <div class="subheading mb-3">Life With Data</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2015 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Data Scientist</h3>
-            <div class="subheading mb-3">Gramener Technologies</div>
-            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May 2013 - April 2018</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Intern - Data Science</h3>
-            <div class="subheading mb-3">Gramener Technologies</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Aug 2012 - March 2013</span>
-          </div>
-        </div>
+        <h2 class="mb-5">Projects <em class="h6">to list a few...</em></h2>
+        <div class="project-cards row worklist"></div>
+        <script type="text/html" id="worklist">
+          <% _.each(wlist, function(row){ %>
+            <div class="col-md-3 mb-4">
+              <div class="card px-2 py-1">
+                <div class="card-block" style="background: url(img/<%= row.image%>); background-position: 100% 0; background-size: auto 40px; background-repeat: no-repeat;">
+                  <h4 class="card-title"><%= row.name%></h4>
+                  <!-- <h6 class="card-subtitle text-muted">Support card subtitle</h6> -->
+                  <p class="card-text p-y-1"><%= row.description %></p>
+                  <a href="<%= row.link%>" class="card-link"><%= row.linktext%></a>
+                </div>
+              </div>
+            </div>
+          <% }) %>
+        </script>
       </div>
-
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="blog">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Colorado Boulder</h3>
-            <div class="subheading mb-3">Bachelor of Science</div>
-            <div>Computer Science - Web Development Track</div>
-            <p>GPA: 3.23</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2006 - May 2010</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">James Buchanan High School</h3>
-            <div class="subheading mb-3">Technology Magnet Program</div>
-            <p>GPA: 3.56</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
-          </div>
-        </div>
-
+        <h2 class="mb-5">Blog</h2>
+        ...
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+    <section class="resume-section p-3 p-lg-5 d-flex" id="resume">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5">Resume</h2>
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-        </ul>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="block-title">
+              <h3>Education</h3>
+            </div>
+            <div class="timeline">
+              <div class="timeline-event te-primary">
+                <h4 class="event-name">Master of Science</h4>
+                <div>Embedded & Wireless Technology</div>
+                <span class="event-description">Manipal University</span>
+                <p>2013</p>
+              </div>
 
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
+              <div class="timeline-event te-primary">
+                <h4 class="event-name">Bachelor of Engineering</h4>
+                <div>Computer Science</div>
+                <span class="event-description">VTU - BEC</span>
+                <p>2011</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="block-title">
+              <h3>Experience</h3>
+            </div>
+            <div class="timeline">
+
+              <div class="timeline-event te-primary">
+                <h4 class="event-name">Lead Data Scientist</h4>
+                <span class="event-description">Gramener</span>
+                <div class="event-date">Jan 2019 - Current</div>
+                <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+              </div>
+
+              <div class="timeline-event te-primary">
+                <h4 class="event-name">Senior Data Scientist</h4>
+                <span class="event-description">Gramener</span>
+                <div class="event-date">May 2018 - Dec 2018</div>
+                <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+              </div>
+
+              <div class="timeline-event te-primary">
+                <h4 class="event-name">Data Scientist</h4>
+                <span class="event-description">Gramener</span>
+                <div class="event-date">May 2015 - Apr 2018</div>
+                <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+              </div>
+
+              <div class="timeline-event te-primary">
+                <h4 class="event-name">Data Specialist</h4>
+                <span class="event-description">Gramener</span>
+                <div class="event-date">May 2013 - Apr 2015</div>
+                <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="block-title">
+              <h3>Software Engineering</h3>
+            </div>
+            <div class="skills-info mb-4">
+              <span>
+                Python, JavaScript, TypeScript, HTML, CSS, Web Frameworks, Vue.js,
+                MSSQL, MySQL, Redis, Neo4j, MangoDB, Elasticsearch, SQLite,
+                PostGRES, PostGIS, TileMill, IIS, Nginx, Docker, Git, Dev-Ops, Data-Ops, AWS, Azure
+              </span>
+            </div>
+            <div class="block-title">
+              <h3>Data Science</h3>
+            </div>
+            <div class="skills-info mb-4">
+              <span>
+                Pandas, R, Spacy, D3.js, Exploratory Data Analysis, Data Visualization, Machine Learning, NLP,
+                Text-Mining, Geospatial Analysis,
+              </span>
+            </div>
+            <div class="block-title">
+              <h3>Consulting & Tools</h3>
+            </div>
+            <div class="skills-info mb-4">
+              <span>
+                Data Consulting, Storytelling with Data, Communication, PowerPoint, Excel, Power-BI,
+                Power Apps
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+    <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier
+          and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and
+          kayaking.</p>
+        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows,
+          I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements
+          in the front-end web development world.</p>
       </div>
     </section>
 
-    <hr class="m-0">
+    <hr class="m-0"> -->
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+    <!-- <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="notebook">
       <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
+        <h2 class="mb-5">Notebooks</h2>
+        ...
       </div>
-    </section>
-
+    </section> -->
   </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <!-- Plugin JavaScript -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/jquery.easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
-
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/lodash/lodash.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
-
 </html>

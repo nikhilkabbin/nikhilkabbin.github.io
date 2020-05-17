@@ -20,9 +20,13 @@
     $('.navbar-collapse').collapse('hide');
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#sideNav'
   });
+
+  // Initialize Data Templates
+  var $work = _.template($('#worklist').html());
+  $('.worklist').html($work({wlist: data.work}));
+  // $('.worklist').after($work({wlist: data.work}));
 
 })(jQuery); // End of use strict
